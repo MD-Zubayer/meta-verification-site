@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Deletion Instructions — New Smart Agent</title>
+  <meta name="description" content="Step-by-step instructions for Meta / Facebook users to revoke permissions and request complete deletion of their account data from New Smart Agent.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5',
+            },
+            dark: {
+              950: '#08081a',
+              900: '#0f172a',
+              850: '#131b31',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-300 antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/5 bg-dark-950/80 backdrop-blur-xl sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="New Smart Agent Logo" class="w-10 h-10 object-contain rounded-xl">
+        <span class="text-xl font-extrabold tracking-tight text-white">
+          New <span class="text-gradient">Smart</span> Agent
+        </span>
+      </a>
+      <div class="flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Document Header -->
+  <section class="pt-20 pb-12 border-b border-white/5 bg-dark-900/40">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Meta Data Deletion Callback & Compliance
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+        User Data Deletion Instructions
+      </h1>
+      <p class="text-slate-400 text-base max-w-2xl font-normal leading-relaxed">
+        In accordance with the Meta Platform Developer Policy (§4.b) and global privacy regulations (GDPR & CCPA), New Smart Agent provides users with complete autonomy to revoke application access and request permanent deletion of all stored data.
+      </p>
+    </div>
+  </section>
+
+  <!-- Dynamic Status Check (For Meta Deletion Callback) -->
+  <div id="callback" class="max-w-4xl mx-auto px-6 pt-12">
+    <div class="p-6 rounded-2xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-emerald-400">Meta Deletion Callback Status Check</p>
+        <p class="text-xs text-slate-400 mt-1">If you were redirected here by Facebook after removing our app, your confirmation code is shown below:</p>
+      </div>
+      <div class="bg-dark-950 px-5 py-2.5 rounded-xl border border-white/10 font-mono text-sm font-bold text-white shrink-0" id="confirmation-code">
+        CONF-PENDING-CHECK
+      </div>
+    </div>
+  </div>
+
+  <!-- Step-by-Step Deletion Methods -->
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12 text-sm leading-relaxed text-slate-300">
+
+    <!-- Method 1: Self-Service via Facebook Settings -->
+    <section class="glass-card p-8 rounded-3xl space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center font-bold text-lg">
+          1
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-white tracking-tight">Method 1: Disconnect via Facebook Account Settings (Instant)</h2>
+          <p class="text-xs text-slate-400">Immediate token revocation through Meta interface</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-slate-300">
+        <p>You can remove <strong>New Smart Agent</strong> and immediately revoke our access to your Facebook Pages by following these steps:</p>
+        <ol class="list-decimal pl-6 space-y-3 text-slate-400">
+          <li>Log in to your Facebook account and click on your profile picture in the top-right corner.</li>
+          <li>Navigate to <strong class="text-white">Settings & Privacy &gt; Settings</strong>.</li>
+          <li>In the left-hand menu, scroll down to the <strong class="text-white">Security / Permissions</strong> section and select <strong class="text-white">Business Integrations</strong> (or <strong class="text-white">Apps and Websites</strong>).</li>
+          <li>Locate <strong class="text-white">New Smart Agent</strong> in the list of active integrations.</li>
+          <li>Click the <strong class="text-white">Remove</strong> button next to New Smart Agent.</li>
+          <li>In the confirmation popup, optionally check the box to delete all posts, videos, or events published on your behalf, and click <strong class="text-white">Remove</strong> to confirm.</li>
+        </ol>
+        <div class="p-4 rounded-xl bg-dark-900/80 border border-white/5 text-xs text-slate-400">
+          <strong class="text-white">Result:</strong> Facebook immediately invalidates your Page Access Token. Our backend will receive a real-time deauthorization webhook and instantly halt all automated messages and actions for your pages.
+        </div>
+      </div>
+    </section>
+
+    <!-- Method 2: Direct Request to Data Protection Officer -->
+    <section class="glass-card p-8 rounded-3xl space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center font-bold text-lg">
+          2
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-white tracking-tight">Method 2: Request Complete Data Purge via Email</h2>
+          <p class="text-xs text-slate-400">Full wipe of database records, logs, and cached messages</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-slate-300">
+        <p>If you wish to have all stored records (such as your account profile, transaction history, message metadata, and cached interaction logs) permanently wiped from our production servers:</p>
+        
+        <div class="p-6 rounded-2xl bg-dark-900/80 border border-white/5 space-y-3 font-mono text-xs">
+          <p><strong class="text-white">To:</strong> <a href="mailto:support@newsmartagent.com" class="text-emerald-400">support@newsmartagent.com</a>, <a href="mailto:newsmartagentbd@gmail.com" class="text-emerald-400">newsmartagentbd@gmail.com</a></p>
+          <p><strong class="text-white">Subject:</strong> User Data Deletion Request - [Your Registered Email or Page ID]</p>
+          <p><strong class="text-white">Body Requirements:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-400">
+            <li>Registered account email address on New Smart Agent.</li>
+            <li>Facebook Page Name and Page ID (if applicable).</li>
+            <li>Explicit confirmation statement requesting permanent deletion.</li>
+          </ul>
+        </div>
+
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Our engineering team will verify the request, execute the permanent erasure across our database and cache partitions within <strong class="text-white">7 to 30 calendar days</strong>, and issue an official Confirmation of Deletion email with a permanent verification hash.
+        </p>
+      </div>
+    </section>
+
+    <!-- Scope of Deleted Information -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">What Data Is Permanently Purged?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+        <div class="p-4 rounded-xl bg-dark-900/50 border border-white/5">
+          <p class="text-white font-bold mb-1">Access Tokens & Credentials</p>
+          <p class="text-xs text-slate-400">All Page Access Tokens, webhook subscriptions, and encrypted API keys are deleted immediately.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-900/50 border border-white/5">
+          <p class="text-white font-bold mb-1">Inbound Message Cache</p>
+          <p class="text-xs text-slate-400">All temporary conversation contexts and prompt memory buffers are wiped from Redis and PostgreSQL.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-900/50 border border-white/5">
+          <p class="text-white font-bold mb-1">Lead & Contact Records</p>
+          <p class="text-xs text-slate-400">Customer profiles captured via social Messenger flows are anonymized or permanently deleted.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-dark-900/50 border border-white/5">
+          <p class="text-white font-bold mb-1">Merchant Account Profile</p>
+          <p class="text-xs text-slate-400">User account details, settings, and automation templates are permanently removed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Contact -->
+    <section class="glass-card p-8 rounded-3xl space-y-4 border-white/20">
+      <h2 class="text-xl font-bold text-white tracking-tight">Need Assistance?</h2>
+      <p class="text-slate-400 text-xs">
+        If you experience any difficulties during the deletion process or have questions regarding our compliance with Meta Platform Terms, our legal and engineering teams are ready to assist.
+      </p>
+      <div class="p-4 rounded-2xl bg-dark-900/80 border border-white/5 text-xs font-mono space-y-1">
+        <p><strong class="text-white">Compliance Contact:</strong> <a href="mailto:support@newsmartagent.com" class="text-emerald-400">support@newsmartagent.com</a></p>
+        <p><strong class="text-white">Business Address:</strong> Sadarpur, Faridpur, Dhaka, Bangladesh</p>
+        <p><strong class="text-white">Phone / WhatsApp:</strong> +8801727358743</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark-950 border-t border-white/5 py-12 text-xs text-slate-500 text-center">
+    <div class="max-w-7xl mx-auto px-6 space-y-3">
+      <p>&copy; 2026 New Smart Agent. All rights reserved.</p>
+      <div class="flex items-center justify-center gap-6">
+        <a href="index.html" class="hover:text-slate-300">Home</a>
+        <a href="privacy.html" class="hover:text-slate-300">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-slate-300">Terms of Service</a>
+        <a href="deletion.html" class="text-slate-300 font-bold">Data Deletion</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script to capture confirmation code from URL params -->
+  <script>
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('id') || urlParams.get('code') || urlParams.get('confirmation_code');
+      const elem = document.getElementById('confirmation-code');
+      if (code && elem) {
+        elem.textContent = 'CODE: ' + code;
+        elem.classList.add('text-emerald-400', 'border-emerald-500/40');
+      } else if (elem) {
+        elem.textContent = 'STATUS: ACTIVE / READY';
+      }
+    })();
+  </script>
+</body>
+</html>
+

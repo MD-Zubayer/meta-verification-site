@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Smart Agent — Next-Gen AI Automation & Omnichannel Communication</title>
+  <meta name="description" content="New Smart Agent is an all-in-one AI automation SaaS platform for Facebook Messenger, WhatsApp, Instagram, Telegram, and YouTube. Scale customer interactions seamlessly.">
+  <meta name="author" content="New Smart Agent">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            },
+            dark: {
+              950: '#08081a',
+              900: '#0f172a',
+              850: '#131b31',
+              800: '#1e293b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+      box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-300 antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- Ambient Glow Effects -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-brand-600/15 rounded-full blur-[160px]"></div>
+    <div class="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[180px]"></div>
+    <div class="absolute -bottom-40 right-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[180px]"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="relative z-50 border-b border-white/5 bg-dark-950/80 backdrop-blur-xl sticky top-0">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/logo.png" alt="New Smart Agent Logo" class="w-10 h-10 object-contain rounded-xl group-hover:scale-105 transition-transform duration-300">
+        <span class="text-xl font-extrabold tracking-tight text-white">
+          New <span class="text-gradient">Smart</span> Agent
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
+        <a href="#features" class="hover:text-white transition-colors">Features</a>
+        <a href="#integrations" class="hover:text-white transition-colors">Integrations</a>
+        <a href="#architecture" class="hover:text-white transition-colors">Architecture</a>
+        <a href="#compliance" class="hover:text-white transition-colors">Meta Compliance</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="https://newsmartagent.com" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
+          Main App
+        </a>
+        <a href="privacy.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-brand-600 to-purple-600 hover:from-brand-500 hover:to-purple-500 shadow-lg shadow-brand-600/25 transition-all">
+          Legal & Privacy
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card text-xs font-bold uppercase tracking-widest text-brand-500 mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Meta Verified Business Partner Architecture
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-8 max-w-4xl mx-auto">
+        Intelligent Social Automation <br>
+        <span class="text-gradient">Built for Modern Enterprise</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed mb-12">
+        New Smart Agent connects to Facebook Graph API, WhatsApp Business API, Instagram, and webhooks to deliver context-aware AI replies, order intake, and customer support.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white text-dark-950 font-bold text-sm tracking-wide hover:bg-slate-100 transition-all shadow-xl shadow-white/5 flex items-center justify-center gap-2">
+          Explore Platform
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="deletion.html" class="w-full sm:w-auto px-8 py-4 rounded-2xl glass-card text-white font-bold text-sm tracking-wide hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+          Data Management
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-20 pt-10 border-t border-white/5 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="text-left">
+          <p class="text-3xl font-extrabold text-white">24/7</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">AI Automated Uptime</p>
+        </div>
+        <div class="text-left">
+          <p class="text-3xl font-extrabold text-white">Meta API</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Official Graph Protocols</p>
+        </div>
+        <div class="text-left">
+          <p class="text-3xl font-extrabold text-white">Zero</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Data Selling Policy</p>
+        </div>
+        <div class="text-left">
+          <p class="text-3xl font-extrabold text-white">TLS 1.3</p>
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">End-to-End Encryption</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section id="integrations" class="relative z-10 py-24 bg-dark-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-xs font-black uppercase tracking-[0.25em] text-brand-500 mb-3">Omnichannel Ecosystem</h2>
+        <h3 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+          One unified platform for every customer touchpoint.
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Facebook Messenger -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-blue-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.908 1.45 5.518 3.733 7.202v3.54a.8.8 0 001.218.685l3.528-1.956c.494.088 1.004.135 1.521.135 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.05 12.355l-2.617-2.793-5.112 2.793 5.626-5.972 2.68 2.793 5.048-2.793-5.625 5.972z"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Facebook Messenger</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Direct integration with the Facebook Graph API to receive incoming messaging webhooks, handle customer inquiries, and execute conversational sales flows in real-time.
+          </p>
+        </div>
+
+        <!-- WhatsApp Business -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-600/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.658 1.43 5.63 1.43h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">WhatsApp Automation</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Enterprise-grade messaging engine enabling instant automated confirmations, support routing, order fulfillment updates, and catalog query handling.
+          </p>
+        </div>
+
+        <!-- Instagram Automation -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-pink-600/10 border border-pink-500/20 flex items-center justify-center text-pink-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Instagram DM & Comments</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Respond instantly to incoming Direct Messages, story mentions, and comment leads with smart qualification funnels and human-handoff routing.
+          </p>
+        </div>
+
+        <!-- Facebook Comment Auto-Reply -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-indigo-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Post & Ad Comment Automation</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Monitor public comments on Facebook posts and active ads, automatically replying with public answers and sending private Messenger follow-ups.
+          </p>
+        </div>
+
+        <!-- YouTube & Social Content -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-red-600/10 border border-red-500/20 flex items-center justify-center text-red-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">YouTube Engagement</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            AI-powered response orchestration for YouTube video comments, community questions, and subscriber relationship management.
+          </p>
+        </div>
+
+        <!-- Google Business Profile -->
+        <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-sky-600/10 border border-sky-500/20 flex items-center justify-center text-sky-500 mb-6 text-2xl font-bold">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Google Business Profile</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Keep reviews, questions, and location feedback answered promptly using our contextual sentiment analysis and prompt customization engine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features & Architecture -->
+  <section id="features" class="relative z-10 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-600/10 border border-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-widest mb-6">
+            Enterprise Ready
+          </div>
+          <h3 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-8">
+            Engineered for high-volume conversational workloads.
+          </h3>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-xl bg-brand-600/20 text-brand-400 flex items-center justify-center shrink-0 font-bold">1</div>
+              <div>
+                <h4 class="text-base font-bold text-white">Real-Time Webhook Processing</h4>
+                <p class="text-sm text-slate-400 mt-1">Direct verification of Meta Graph webhooks (`messages`, `messaging_postbacks`, `feed`) via Django event queues.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-xl bg-brand-600/20 text-brand-400 flex items-center justify-center shrink-0 font-bold">2</div>
+              <div>
+                <h4 class="text-base font-bold text-white">Contextual Semantic Memory</h4>
+                <p class="text-sm text-slate-400 mt-1">Multi-turn dialogues maintain context of customer inquiries without requiring hardcoded keyword scripts.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-xl bg-brand-600/20 text-brand-400 flex items-center justify-center shrink-0 font-bold">3</div>
+              <div>
+                <h4 class="text-base font-bold text-white">Human Agent Hand-Off</h4>
+                <p class="text-sm text-slate-400 mt-1">Seamlessly pause AI and escalate complex customer inquiries to live support specialists when required.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-[2.5rem] p-8 sm:p-12 relative overflow-hidden border border-white/10">
+          <div class="text-xs font-mono text-brand-400 uppercase tracking-widest mb-4">// System Architecture Overview</div>
+          <div class="space-y-4 font-mono text-xs">
+            <div class="p-4 rounded-xl bg-dark-900/80 border border-white/5">
+              <span class="text-purple-400 font-bold">Meta Graph API</span> &rarr; Secure Webhook Endpoint (TLS 1.3)
+            </div>
+            <div class="p-4 rounded-xl bg-dark-900/80 border border-white/5">
+              <span class="text-blue-400 font-bold">Asynchronous Worker</span> &rarr; Celery / Redis In-Memory Queue
+            </div>
+            <div class="p-4 rounded-xl bg-dark-900/80 border border-white/5">
+              <span class="text-emerald-400 font-bold">Context Engine</span> &rarr; Natural Language Prompt Pipeline
+            </div>
+            <div class="p-4 rounded-xl bg-dark-900/80 border border-white/5">
+              <span class="text-pink-400 font-bold">Response Dispatcher</span> &rarr; Send API with Rate-Limit Backoff
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta Review & Compliance Transparency -->
+  <section id="compliance" class="relative z-10 py-24 bg-dark-900/60 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-xs font-black uppercase tracking-[0.25em] text-emerald-400 mb-3">Compliance & Standards</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Adhering to Meta Platform Terms & Graph API Standards
+        </h3>
+        <p class="text-slate-400 text-sm mt-4">
+          New Smart Agent operates strictly within authorized permissions. We never harvest personal profiles, private friend networks, or sell user data.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-3xl">
+          <h4 class="text-lg font-bold text-white mb-2">Token Encryption</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Page access tokens are encrypted at rest using industry-standard cryptography. System access is strictly restricted to authenticated backend workflows.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl">
+          <h4 class="text-lg font-bold text-white mb-2">Granular Scopes</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We request only the minimum required permissions (`pages_messaging`, `pages_manage_metadata`, `pages_read_engagement`) required to serve customer conversations.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl">
+          <h4 class="text-lg font-bold text-white mb-2">User Erasure Rights</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Full compliance with Meta Data Deletion protocols. Users can revoke access directly inside Facebook or trigger full system wipes within 30 days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Business Identification -->
+  <section id="contact" class="relative z-10 py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-card rounded-[3rem] p-10 sm:p-16 border border-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-xs font-black uppercase tracking-[0.25em] text-brand-500 mb-3">Business Inquiries</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+              Connect with New Smart Agent
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-8">
+              For support inquiries, commercial deployment, or Meta App Review auditor requests, contact our legal and administrative team directly.
+            </p>
+
+            <div class="space-y-4 text-sm font-semibold text-slate-300">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <span>Official Support: <a href="mailto:support@newsmartagent.com" class="text-white hover:text-brand-400 transition-colors">support@newsmartagent.com</a></span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <span>Administrative: <a href="mailto:newsmartagentbd@gmail.com" class="text-white hover:text-brand-400 transition-colors">newsmartagentbd@gmail.com</a></span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <span>Phone / WhatsApp: <a href="tel:+8801727358743" class="text-white hover:text-brand-400 transition-colors">+8801727358743</a></span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-400">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <span>Registered Address: Sadarpur, Faridpur, Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-dark-900/80 p-8 rounded-3xl border border-white/5 space-y-4">
+            <h4 class="text-base font-bold text-white">Verification Quick Links</h4>
+            <div class="grid grid-cols-1 gap-3">
+              <a href="privacy.html" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all text-sm font-semibold text-white">
+                <span>Privacy Policy Document</span>
+                <span class="text-brand-400">&rarr;</span>
+              </a>
+              <a href="terms.html" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all text-sm font-semibold text-white">
+                <span>Terms of Service</span>
+                <span class="text-brand-400">&rarr;</span>
+              </a>
+              <a href="deletion.html" class="flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all text-sm font-semibold text-white">
+                <span>User Data Deletion Callback & Instructions</span>
+                <span class="text-brand-400">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Footer -->
+  <footer class="relative z-10 bg-dark-950 border-t border-white/5 text-slate-400">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-white/5">
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="New Smart Agent Logo" class="w-9 h-9 object-contain rounded-xl">
+            <span class="text-xl font-black text-white">New <span class="text-gradient">Smart</span> Agent</span>
+          </div>
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Empowering businesses with autonomous omnichannel AI automation across Meta, Google, and Web platforms.
+          </p>
+          <div class="text-xs space-y-1.5 text-slate-400">
+            <p><strong class="text-white">Legal Business Name:</strong> New Smart Agent</p>
+            <p><strong class="text-white">Official Domain:</strong> newsmartagent.com</p>
+            <p><strong class="text-white">Support Email:</strong> support@newsmartagent.com</p>
+            <p><strong class="text-white">Business Address:</strong> Sadarpur, Faridpur, Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <!-- Solutions -->
+        <div class="space-y-4">
+          <p class="text-xs font-black uppercase tracking-widest text-white">Solutions</p>
+          <ul class="space-y-2.5 text-xs font-medium">
+            <li><a href="#integrations" class="hover:text-white transition-colors">Facebook Automation</a></li>
+            <li><a href="#integrations" class="hover:text-white transition-colors">WhatsApp Business</a></li>
+            <li><a href="#integrations" class="hover:text-white transition-colors">Instagram DM AI</a></li>
+            <li><a href="#integrations" class="hover:text-white transition-colors">Post Comment Automation</a></li>
+            <li><a href="#integrations" class="hover:text-white transition-colors">Lead Tracking & CRM</a></li>
+          </ul>
+        </div>
+
+        <!-- Meta Compliance & Legal -->
+        <div class="space-y-4">
+          <p class="text-xs font-black uppercase tracking-widest text-white">Compliance</p>
+          <ul class="space-y-2.5 text-xs font-medium">
+            <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="deletion.html" class="hover:text-white transition-colors">Data Deletion Instructions</a></li>
+            <li><a href="privacy.html#meta-graph" class="hover:text-white transition-colors">Meta Graph API Disclosures</a></li>
+            <li><a href="deletion.html#callback" class="hover:text-white transition-colors">Deletion Status Callback</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="space-y-4">
+          <p class="text-xs font-black uppercase tracking-widest text-white">Contact</p>
+          <ul class="space-y-2.5 text-xs font-medium">
+            <li><a href="mailto:support@newsmartagent.com" class="hover:text-white transition-colors">support@newsmartagent.com</a></li>
+            <li><a href="mailto:newsmartagentbd@gmail.com" class="hover:text-white transition-colors">newsmartagentbd@gmail.com</a></li>
+            <li><a href="tel:+8801727358743" class="hover:text-white transition-colors">+8801727358743</a></li>
+            <li class="pt-2 text-[11px] text-slate-500">Sadarpur, Faridpur, Bangladesh</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <p class="text-slate-500">
+          &copy; 2026 New Smart Agent. All rights reserved. Meta and the Meta logo are trademarks of Meta Platforms, Inc.
+        </p>
+        <div class="flex items-center gap-6 text-slate-500">
+          <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy</a>
+          <a href="terms.html" class="hover:text-slate-300 transition-colors">Terms</a>
+          <a href="deletion.html" class="hover:text-slate-300 transition-colors">Data Deletion</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

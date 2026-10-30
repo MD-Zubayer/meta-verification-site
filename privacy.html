@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — New Smart Agent</title>
+  <meta name="description" content="Privacy Policy for New Smart Agent explaining how user information, Meta Graph API data, page access tokens, and messages are handled and protected.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5',
+            },
+            dark: {
+              950: '#08081a',
+              900: '#0f172a',
+              850: '#131b31',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-300 antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/5 bg-dark-950/80 backdrop-blur-xl sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="New Smart Agent Logo" class="w-10 h-10 object-contain rounded-xl">
+        <span class="text-xl font-extrabold tracking-tight text-white">
+          New <span class="text-gradient">Smart</span> Agent
+        </span>
+      </a>
+      <div class="flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+        <a href="deletion.html" class="hover:text-white transition-colors">Data Deletion</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Document Header -->
+  <section class="pt-20 pb-12 border-b border-white/5 bg-dark-900/40">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-600/10 border border-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-widest mb-6">
+        Privacy & Compliance Governance
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+        Privacy Policy
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
+        <span>Effective Date: March 2026</span>
+        <span>&bull;</span>
+        <span>Version: 2.4.0</span>
+        <span>&bull;</span>
+        <span>Entity: New Smart Agent (newsmartagent.com)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Legal Content -->
+  <main class="max-w-4xl mx-auto px-6 py-16 space-y-12 text-sm leading-relaxed text-slate-300">
+
+    <!-- Section 1 -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">1. Introduction</h2>
+      <p>
+        Welcome to <strong>New Smart Agent</strong> ("NSA", "we", "us", or "our"), accessible at <a href="https://newsmartagent.com" class="text-brand-400 hover:underline">https://newsmartagent.com</a>. We provide an AI-powered omnichannel automation SaaS platform designed to streamline customer communications across Meta platforms (Facebook Messenger, Instagram DM, Page comments) and connected third-party channels.
+      </p>
+      <p>
+        This Privacy Policy describes our practices regarding the collection, usage, storage, and safeguarding of information when you connect your social media pages, utilize our automation engine, or register an account with us. By using New Smart Agent, you acknowledge and agree to the practices outlined in this policy.
+      </p>
+    </section>
+
+    <!-- Section 2: Meta Graph API Specific Disclosure -->
+    <section id="meta-graph" class="glass-card p-8 rounded-3xl space-y-4 border-brand-500/30">
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-2">
+        Meta Platform & Graph API Compliance
+      </div>
+      <h2 class="text-xl font-bold text-white tracking-tight">2. Facebook & Meta Data Collection and Usage</h2>
+      <p>
+        When you connect your Facebook Page or Instagram Business account to New Smart Agent, our platform interacts with Meta's Graph API strictly within the bounds of the permissions you explicitly grant during the OAuth authorization process.
+      </p>
+      <h3 class="text-base font-bold text-white pt-2">A. Data Points We Access</h3>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li><strong>Page Identifiers & Tokens:</strong> Facebook Page ID, Page name, and secure Page Access Tokens required to invoke Graph API endpoints on your behalf.</li>
+        <li><strong>Customer Messages & Metadata:</strong> Inbound messages sent to your Facebook Page inbox, message sender scoped IDs (PSID), timestamps, and conversation threads.</li>
+        <li><strong>Comment Interactions:</strong> Public comments and replies made on your Facebook Page posts and connected advertisements.</li>
+        <li><strong>Public Profile Details:</strong> Public sender name and profile picture URL provided by Meta via webhook events solely to personalize replies in customer support threads.</li>
+      </ul>
+
+      <h3 class="text-base font-bold text-white pt-2">B. Purpose of Processing</h3>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li>Executing real-time automated AI responses to customer queries in Messenger.</li>
+        <li>Automatically moderating and replying to comments on Facebook posts.</li>
+        <li>Facilitating seamless escalation and hand-off to live human support agents.</li>
+        <li>Tracking conversation resolution and customer engagement metrics.</li>
+      </ul>
+
+      <h3 class="text-base font-bold text-white pt-2">C. Token Handling & Encryption</h3>
+      <p class="text-slate-400">
+        All Meta Page Access Tokens are stored with industry-standard cryptographic encryption (AES-256) inside our backend database. Tokens are never exposed to client browsers or unauthorized internal services. You may revoke these tokens at any time directly through your Facebook Page settings or through our dashboard.
+      </p>
+    </section>
+
+    <!-- Section 3: AI Processing & Privacy -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">3. Artificial Intelligence Data Processing</h2>
+      <p>
+        New Smart Agent utilizes state-of-the-art Large Language Models (LLMs) to formulate accurate, contextually relevant replies to customer inquiries.
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li><strong>Zero Generalized Model Training:</strong> We <strong>never</strong> use customer message contents, private correspondence, or Meta user data to train, fine-tune, or improve generalized foundation AI models.</li>
+        <li><strong>Contextual Processing Only:</strong> Inbound text is passed to processing pipelines via secure, zero-data-retention API agreements strictly to evaluate intent and output instant responses.</li>
+        <li><strong>Business Isolation:</strong> Knowledge base documents and catalogs uploaded by a merchant are strictly partitioned in isolated tenant databases and never accessible to other accounts.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Data Retention & Deletion -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">4. Data Retention and User Data Deletion Rights</h2>
+      <p>
+        We respect user privacy and adhere to the principle of data minimization:
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li><strong>Ephemeral Message Processing:</strong> Inbound message payloads from webhooks are held in cache only as long as necessary to formulate responses and update conversation logs.</li>
+        <li><strong>Account Deletion:</strong> If you delete your New Smart Agent account or disconnect your Meta business page, all corresponding access tokens, cached threads, and credentials are permanently purged within 30 days.</li>
+        <li><strong>Direct Deletion Callback:</strong> For detailed instructions on removing New Smart Agent from your Facebook profile and submitting a manual deletion request, visit our <a href="deletion.html" class="text-brand-400 underline font-semibold">User Data Deletion Instructions Page</a>.</li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Security Architecture -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">5. Data Security and Infrastructure</h2>
+      <p>
+        We apply multi-layered security controls to protect your confidential business data:
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li><strong>Encryption in Transit:</strong> All HTTP traffic is protected by TLS 1.3 / SSL encryption through Cloudflare's security layer.</li>
+        <li><strong>Access Isolation:</strong> Production databases are hosted behind private virtual networks with strict IP whitelisting and no direct public internet exposure.</li>
+        <li><strong>Authentication:</strong> Session credentials utilize HttpOnly secure cookies and JWT tokens with short lifetimes to mitigate session hijacking.</li>
+      </ul>
+    </section>
+
+    <!-- Section 6: Third-Party Disclosures & No Selling -->
+    <section class="glass-card p-8 rounded-3xl space-y-4">
+      <h2 class="text-xl font-bold text-white tracking-tight">6. Third-Party Sharing & Prohibition on Data Sale</h2>
+      <p>
+        <strong>New Smart Agent does NOT sell, rent, monetize, or trade any personal information, customer communication data, or Meta platform data to third-party data brokers, advertising networks, or unauthorized third parties.</strong>
+      </p>
+      <p class="text-slate-400">
+        We disclose information solely to authorized cloud infrastructure providers (e.g., Cloudflare, cloud hosting nodes) strictly necessary to deliver the SaaS service.
+      </p>
+    </section>
+
+    <!-- Section 7: Legal Contact Information -->
+    <section class="glass-card p-8 rounded-3xl space-y-4 border-white/20">
+      <h2 class="text-xl font-bold text-white tracking-tight">7. Contact Information</h2>
+      <p>
+        If you have questions regarding this Privacy Policy, wish to exercise your data rights, or need assistance with Meta App Review inquiries, contact our Data Protection Officer:
+      </p>
+      <div class="mt-4 p-6 rounded-2xl bg-dark-900/80 border border-white/5 space-y-2 text-xs font-mono">
+        <p><strong class="text-white">Legal Business Name:</strong> New Smart Agent</p>
+        <p><strong class="text-white">Official Support Email:</strong> <a href="mailto:support@newsmartagent.com" class="text-brand-400">support@newsmartagent.com</a></p>
+        <p><strong class="text-white">Administrative Email:</strong> <a href="mailto:newsmartagentbd@gmail.com" class="text-brand-400">newsmartagentbd@gmail.com</a></p>
+        <p><strong class="text-white">Phone / WhatsApp:</strong> +8801727358743</p>
+        <p><strong class="text-white">Official Registered Address:</strong> Sadarpur, Faridpur, Dhaka, Bangladesh</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark-950 border-t border-white/5 py-12 text-xs text-slate-500 text-center">
+    <div class="max-w-7xl mx-auto px-6 space-y-3">
+      <p>&copy; 2026 New Smart Agent. All rights reserved.</p>
+      <div class="flex items-center justify-center gap-6">
+        <a href="index.html" class="hover:text-slate-300">Home</a>
+        <a href="privacy.html" class="text-slate-300 font-bold">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-slate-300">Terms of Service</a>
+        <a href="deletion.html" class="hover:text-slate-300">Data Deletion</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
